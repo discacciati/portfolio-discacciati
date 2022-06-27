@@ -10,7 +10,8 @@ const Footer = () => {
                 <Line></Line>
 
                 <Rodape> 
-                    <Text> Construído por Eliane Discacciati <AiOutlineCopyrightCircle/> </Text> 
+                    <Text> Construído por Eliane Discacciati <Div><AiOutlineCopyrightCircle/></Div> </Text> 
+                    <Text>Todos os direitos reservados</Text>
                 </Rodape>
                                               
             </Box>      

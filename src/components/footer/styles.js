@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import HamburgueriaImg from '../../assets/hamburgueria.svg';
 import { css } from "styled-components";
 
 const BebasFont = css`
@@ -34,16 +33,26 @@ export const Line = styled.div`
   border: 1px solid #A9D2D5;
   background-color: #A9D2D5 ;
   border-radius: 10px;
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   
   @media (min-width: 430px){
     width: 75vw;
   }
 `;
 
+export const Rodape = styled.div`
+ display: flex;
+ flex-direction: column;
+ width: 70vw;
+ align-items: center;
+ justify-content: center;
+ padding: 10px;
+`;
+
+
 export const Text = styled.h5`
   display: flex;
-  width: 75vw;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
@@ -53,7 +62,7 @@ export const Text = styled.h5`
   font-weight: 400;
   font-size: 1em;
   line-height: 30px;
-  text-align: left; 
+  text-align: center; 
   letter-spacing: 0.1em;
   flex-wrap: wrap;
   margin-top: 5px;
@@ -76,11 +85,3 @@ export const Div = styled.div`
 
 
 
-export const Rodape = styled.div`
- display: flex;
- flex-direction: column;
- width: 70vw;
- align-items: center;
- justify-content: center;
- padding: 10px;
-`;

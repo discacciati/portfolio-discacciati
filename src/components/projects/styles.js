@@ -34,7 +34,7 @@ export const Line = styled.div`
   border: 1px solid #A9D2D5;
   background-color: #A9D2D5 ;
   border-radius: 10px;
-  margin: 20px;
+
   
   @media (min-width: 430px){
     width: 75vw;
@@ -65,7 +65,6 @@ export const Boton = styled.div`
 
 export const Text = styled.h5`
   display: flex;
-  width: 75vw;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
@@ -107,6 +106,7 @@ export const Card = styled.div`
     background: #ECF9F7;
     border-radius: 35px;
     border-bottom: 15px solid #A9D2D5;
+    margin-bottom: 20px;
     
 `;
 
@@ -155,3 +155,19 @@ height: 250px;
 justify-content: flex-start;
 
 `; 
+
+export const ButtonA = styled.a`
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background: transparent;
+ margin: none;
+ text-decoration:none;
+ font-family: 'Titillium Web', sans-serif;
+ color: var(--pastellilac);
+ font-weight: 400;
+ &:hover {
+  color: #766C7F;;
+  transition: 0.2s;
+ }
+`;

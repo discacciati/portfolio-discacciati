@@ -48,12 +48,19 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
     transition: theme.transitions.create('opacity'),
   }));
 
-const Header = () => {
-    const [anchorEl, setAnchorEl] = useState(null);
-    const open = Boolean(anchorEl);
-   
+const Header = ({setAbout, setTech, setProject}) => {
+      
     const handleClick = (event) => {
-        setAnchorEl(event.currentTarget);
+        if(event === "setAbout"){ 
+            setAbout(true)
+        }
+        if(event === "setTech"){ 
+            setTech(true)
+        }
+        if(event === "setProject"){ 
+            setProject(true)
+        }
+        
     };
  
 
@@ -62,6 +69,7 @@ const Header = () => {
             <Box>
             <Div></Div>
                 <ImageButton
+                    onClick={()=>handleClick("setAbout")}
                     focusRipple
                     key={"AboutMe"}
                     style={{
@@ -89,8 +97,9 @@ const Header = () => {
                 </ImageButton>             
                         
                 <ImageButton
+                     onClick={()=>handleClick("setTech")}                    
                     focusRipple
-                    key={"AboutMe"}
+                    key={"Technologies"}
                     style={{
                         width: "160px",
                         height: "200px",
@@ -116,8 +125,9 @@ const Header = () => {
                 </ImageButton>  
 
                 <ImageButton
+                     onClick={()=>handleClick("setProject")}
                     focusRipple
-                    key={"AboutMe"}
+                    key={"Projects"}
                     style={{
                         width: "150px",
                         height: "200px",

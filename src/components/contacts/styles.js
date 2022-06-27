@@ -34,7 +34,7 @@ export const Text = styled.h3`
   color: var(--pastellilac);
   font-weight: 400;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 20px;
   text-align: left; 
   letter-spacing: 0.15em;
   flex-wrap: wrap;
@@ -47,13 +47,34 @@ export const Text = styled.h3`
  `;
 
 export const Paragraph = styled.p`
+  height: 15px;
 
 `;
 
+export const DivLink = styled.div`
+ display: flex;
+ padding: 3px;
+ align-items: center;
+ justify-content: center;
+ height: 20px;
+ margin: 3px;
 
-export const ImageIcon = styled.div`
-    display: flex;
-    justify-content: flex-end;
-    width: 50px;
-    background-image: url(${Linkedin});
+
 `;
+
+export const ButtonA = styled.a`
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background: transparent;
+ margin: none;
+ text-decoration:none;
+ font-family: 'Titillium Web', sans-serif;
+ color: var(--pastellilac);
+ font-weight: 400;
+ &:hover {
+  color: #766C7F;;
+  transition: 0.2s;
+ }
+`;
+

@@ -106,6 +106,7 @@ export const Card = styled.div`
     background: #ECF9F7;
     border-radius: 35px;
     border-bottom: 15px solid #A9D2D5;
+    margin-bottom: 20px;
     
 `;
 
