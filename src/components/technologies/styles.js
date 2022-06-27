@@ -20,7 +20,7 @@ export const Box = styled.div`
   width: 95vw;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 20px 0;
+  padding: 50px 0;
 
   @media (min-width: 430px){
     width: 75vw;
@@ -91,23 +91,25 @@ export const Div = styled.div`
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
     
 `;
 
 export const Card = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 320px;
-    height: 400px;
+    height: 350px;
 
     background: #ECF9F7;
     border-radius: 35px;
+    border-bottom: 15px solid #A9D2D5;
     
 `;
 
-export const CardTitle = styled.h3`
+export const CardTitle = styled.div`
     display: flex;
     justify-content: center;
     font-family: ${BebasFont};
@@ -122,7 +124,7 @@ export const CardTitle = styled.h3`
 
 export const CardText = styled.h5`
     display: flex;
-    font-family: 'Titillium Web';
+    font-family: 'Titillium Web', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
