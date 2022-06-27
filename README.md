@@ -1,1 +1,9 @@
-# portfolio-discacciati
+
+
+
+tecnologias 
+
+React
+yarn
+styledComponents
+tostify
