@@ -2,10 +2,10 @@ import React from "react";
 import { styled } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
-import { useState } from "react";
 import {Container, Box, Div} from "./styles";
-import Link from '@mui/material/Link';
-import AboutMe from "../aboutme";
+import { useHistory } from "react-router-dom";
+import { Redirect } from "react-router-dom";
+import { ButtonA } from "./styles";
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
     position: 'relative',
@@ -51,16 +51,21 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
   }));
 
 const Header = ({setAbout, setTech, setProject}) => {
+
+    const history = useHistory();
       
     const handleClick = (event) => {
         if(event === "setAbout"){ 
             setAbout(true)
+            history.push('/#about')
         }
         if(event === "setTech"){ 
             setTech(true)
+            history.push('/#technologies')
         }
         if(event === "setProject"){ 
             setProject(true)
+            history.push('/#projects')
             
         }
         
@@ -71,7 +76,7 @@ const Header = ({setAbout, setTech, setProject}) => {
         <Container>
             <Box>
             <Div></Div>
-            <Link >
+            <ButtonA href="#about">
                 <ImageButton
                     onClick={()=>handleClick("setAbout")}
                     focusRipple
@@ -99,7 +104,8 @@ const Header = ({setAbout, setTech, setProject}) => {
                         </Typography>
                     </Image>
                 </ImageButton>             
-                </Link>       
+                </ButtonA>  
+                <ButtonA href="#technologies">     
                 <ImageButton
                      onClick={()=>handleClick("setTech")}                    
                     focusRipple
@@ -127,7 +133,8 @@ const Header = ({setAbout, setTech, setProject}) => {
                         </Typography>
                     </Image>
                 </ImageButton>  
-
+                </ButtonA>
+                <ButtonA href="#projects">
                 <ImageButton
                      onClick={()=>handleClick("setProject")}
                     focusRipple
@@ -155,6 +162,7 @@ const Header = ({setAbout, setTech, setProject}) => {
                         </Typography>
                     </Image>
                 </ImageButton>  
+                </ButtonA>
             </Box>      
         </Container>
     )}

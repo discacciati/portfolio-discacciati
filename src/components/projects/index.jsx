@@ -18,7 +18,7 @@ import { BsGithub } from "react-icons/bs";
 
 const Projects = () => {
   return (
-    <Container>
+    <Container id="projects">
       <Box>
         <Line></Line>
         <Boton>PROJECTS</Boton>

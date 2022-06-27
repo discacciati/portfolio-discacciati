@@ -5,7 +5,7 @@ import {Container, Box,Text, Line, Boton } from "./styles";
 const AboutMe = () => {
 
     return(
-        <Container >
+        <Container id="about">
             <Box >
                 <Line></Line>
                 <Boton>ABOUT ME</Boton>

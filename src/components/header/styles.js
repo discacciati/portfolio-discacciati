@@ -41,5 +41,18 @@ color: var(--white);
 
 `;
 
+export const ButtonA = styled.a`
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background: transparent;
+ margin: none;
+ text-decoration:none;
+ &:hover {
+  color: #A3A5C3;;
+  transition: 0.2s;
+ }
+`;
+
 
   

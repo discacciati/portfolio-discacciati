@@ -5,7 +5,7 @@ import {Container, Box,Text, Line, Boton, Div, Card, CardTitle, CardText } from 
 const Technologies = () => {
 
     return(
-        <Container >
+        <Container id="technologies">
             <Box >
                 <Line></Line>
                 <Boton>TECHNOLOGIES</Boton>
