@@ -4,6 +4,8 @@ import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
 import { useState } from "react";
 import {Container, Box, Div} from "./styles";
+import Link from '@mui/material/Link';
+import AboutMe from "../aboutme";
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
     position: 'relative',
@@ -59,6 +61,7 @@ const Header = ({setAbout, setTech, setProject}) => {
         }
         if(event === "setProject"){ 
             setProject(true)
+            
         }
         
     };
@@ -68,6 +71,7 @@ const Header = ({setAbout, setTech, setProject}) => {
         <Container>
             <Box>
             <Div></Div>
+            <Link >
                 <ImageButton
                     onClick={()=>handleClick("setAbout")}
                     focusRipple
@@ -95,7 +99,7 @@ const Header = ({setAbout, setTech, setProject}) => {
                         </Typography>
                     </Image>
                 </ImageButton>             
-                        
+                </Link>       
                 <ImageButton
                      onClick={()=>handleClick("setTech")}                    
                     focusRipple

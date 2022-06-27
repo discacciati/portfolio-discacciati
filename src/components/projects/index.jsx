@@ -29,30 +29,29 @@ const Projects = () => {
               href="https://capstone-m3-grupo-5-vilson.vercel.app/"
               target="_blank"
             >
-             <ClickFinder/>
+              <ClickFinder />
             </ButtonA>
             <CardText>
               {" "}
-              Projeto de uma aplicação com funcionalidades de cadastro, login, portfolio e mais.
+              Projeto de uma aplicação com funcionalidades de cadastro, login,
+              portfolio e mais.
             </CardText>
             <ButtonA
               href="https://capstone-m3-grupo-5-vilson.vercel.app/"
               target="_blank"
             >
-              <CardTitle> LINK PARA O PROJETO | </CardTitle>
+              LINK PARA O PROJETO |
             </ButtonA>
             <ButtonA
               href="https://github.com/pifaria/capstone-m3-grupo-5-vilson/tree/developer"
               target="_blank"
             >
-              <CardTitle>
-                {" "}
-                REPOSITÓRIO{" "}
+                              REPOSITÓRIO{" "}
                 <DivLink>
                   {" "}
                   <BsGithub />{" "}
                 </DivLink>{" "}
-              </CardTitle>{" "}
+            
             </ButtonA>
           </Card>
 
@@ -61,30 +60,31 @@ const Projects = () => {
               href="https://api-kenziefood-m2-discacciati.vercel.app/"
               target="_blank"
             >
-             <KenzieFood/>
+              <KenzieFood />
             </ButtonA>
             <CardText>
               {" "}
-              Projeto de e-commerce com funcionalidades de carrinho de compras, busca de produtos e mais.
+              Projeto de e-commerce com funcionalidades de carrinho de compras,
+              busca de produtos e mais.
             </CardText>
             <ButtonA
               href="https://api-kenziefood-m2-discacciati.vercel.app/"
               target="_blank"
             >
-              <CardTitle> LINK PARA O PROJETO | </CardTitle>
+               LINK PARA O PROJETO | 
             </ButtonA>
             <ButtonA
               href="https://github.com/discacciati/api-kenziefood-m2-discacciati"
               target="_blank"
             >
-              <CardTitle>
-                {" "}
+              
+               
                 REPOSITÓRIO{" "}
                 <DivLink>
                   {" "}
                   <BsGithub />{" "}
                 </DivLink>{" "}
-              </CardTitle>{" "}
+            
             </ButtonA>
           </Card>
 
@@ -104,20 +104,19 @@ const Projects = () => {
               href="https://react-entrega-s1-hamburgueria-da-kenzie-discacciati.vercel.app/ "
               target="_blank"
             >
-              <CardTitle> LINK PARA O PROJETO | </CardTitle>
+               LINK PARA O PROJETO | 
             </ButtonA>
             <ButtonA
               href="https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s1-hamburgueria-da-kenzie-discacciati"
               target="_blank"
             >
-              <CardTitle>
-                {" "}
+             
                 REPOSITÓRIO{" "}
                 <DivLink>
                   {" "}
                   <BsGithub />{" "}
                 </DivLink>{" "}
-              </CardTitle>{" "}
+        
             </ButtonA>
           </Card>
         </Div>

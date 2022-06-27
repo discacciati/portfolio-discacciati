@@ -151,15 +151,20 @@ export const DivLink = styled.div`
 export const ButtonA = styled.a`
  display: flex;
  align-items: center;
+ font-family: ${BebasFont};
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.15em;
+    color: #947EB0;
+    padding: 5px;
  justify-content: center;
  background: transparent;
  margin: none;
  text-decoration:none;
- font-family: 'Titillium Web', sans-serif;
- color: var(--pastellilac);
- font-weight: 400;
  &:hover {
-  color: #766C7F;;
+  color: #A3A5C3;;
   transition: 0.2s;
  }
 `;
