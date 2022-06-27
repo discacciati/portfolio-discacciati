@@ -1,21 +1,20 @@
 import Header from "../../components/header";
 import { Container} from "./styles";
 import Title from "../../components/title";
+import AboutMe from "../../components/aboutme"
+import Contact from "../../components/contacts";
+import Technologies from "../../components/technologies";
+
 
 const Home = () => {
 
     return (
-        <Container 
-        component="main"
-        sx={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        backgroundColor: "white.1",
-        width:"3500px",
-        }}>
+        <Container>
             <Header></Header>
             <Title></Title>
+            <Contact></Contact>
+            <AboutMe></AboutMe>
+            <Technologies></Technologies>
 
         </Container>
 
