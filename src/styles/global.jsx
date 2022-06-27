@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
 	
 	  --white: #f5f5f5;    
 	  --lilac: #947EB0;
-      --pastellilac: #DCD6F7;
+    --pastellilac: #DCD6F7;
 	  --black: #0A0A0B;
 	  --green: #A9D2D5;
 	}
