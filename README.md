@@ -4,9 +4,11 @@
 
 Olá, sou Eliane Discacciati, desenvolvedora Full-Stack. Esse é o repositório do meu portfólio pessoal.
 
-<a name="links"></a>
+## 2. Link para o Portfólio
 
-## 2. Tecnologias utilizadas
+<a name="link" href="https://portfolio-discacciati.vercel.app/" target="_blank">Clique aqui!</a>
+
+## 3. Tecnologias utilizadas
 
 - <a name="react" href="https://pt-br.reactjs.org/" target="_blank">ReactJs</a>
 - <a name="react-router-dom" href="https://www.npmjs.com/package/react-router-dom" target="_blank">React-Router-DOM</a>
