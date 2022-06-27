@@ -20,7 +20,7 @@ export const Box = styled.div`
   width: 95vw;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 0;
+  padding: 50px 0;
 
   @media (min-width: 430px){
     width: 75vw;
