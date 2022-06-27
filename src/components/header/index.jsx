@@ -1,10 +1,9 @@
 import React from "react";
-import { Button} from "@mui/material";
 import { styled } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
 import Typography from '@mui/material/Typography';
 import { useState } from "react";
-import {Container, Box} from "./styles";
+import {Container, Box, Div} from "./styles";
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
     position: 'relative',
@@ -39,17 +38,6 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
     color: '#947EB0',
   }));
   
-  const ImageBackdrop = styled('span')(({ theme }) => ({
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    top: 0,
-    bottom: 0,
-    backgroundColor: '#f5f5f5',
-    opacity: 0.4,
-    transition: theme.transitions.create('opacity'),
-  }));
-  
   const ImageMarked = styled('span')(({ theme }) => ({
     height: 2,
     width: 15,
@@ -72,6 +60,7 @@ const Header = () => {
     return(
         <Container>
             <Box>
+            <Div></Div>
                 <ImageButton
                     focusRipple
                     key={"AboutMe"}
@@ -80,7 +69,6 @@ const Header = () => {
                         height: "200px",
                     }}
                 >
-                    <ImageBackdrop className="MuiImageBackdrop-root" />
                     <Image>
                         <Typography
                         component="span"
@@ -108,7 +96,6 @@ const Header = () => {
                         height: "200px",
                     }}
                 >
-                    <ImageBackdrop className="MuiImageBackdrop-root" />
                     <Image>
                         <Typography
                         component="span"
@@ -136,7 +123,6 @@ const Header = () => {
                         height: "200px",
                     }}
                 >
-                    <ImageBackdrop className="MuiImageBackdrop-root" />
                     <Image>
                         <Typography
                         component="span"
