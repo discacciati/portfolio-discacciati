@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import HamburgueriaImg from '../../assets/hamburgueria.svg';
+import ClickImg from '../../assets/clickfinder.svg';
+import KenzieFoodImg from '../../assets/kenzieFood.svg';
 import { css } from "styled-components";
 
 const BebasFont = css`
@@ -146,16 +148,6 @@ export const DivLink = styled.div`
 
 `;
 
-
-export const Hamburgueria = styled.div`
-display: flex;
-background-image: url(${HamburgueriaImg});
-width: 310px;
-height: 250px;
-justify-content: flex-start;
-
-`; 
-
 export const ButtonA = styled.a`
  display: flex;
  align-items: center;
@@ -171,3 +163,30 @@ export const ButtonA = styled.a`
   transition: 0.2s;
  }
 `;
+
+export const Hamburgueria = styled.div`
+display: flex;
+background-image: url(${HamburgueriaImg});
+width: 310px;
+height: 250px;
+justify-content: flex-start;
+
+`; 
+
+export const ClickFinder = styled.div`
+display: flex;
+background-image: url(${ClickImg});
+width: 310px;
+height: 250px;
+justify-content: flex-start;
+
+`; 
+
+export const KenzieFood = styled.div`
+display: flex;
+background-image: url(${KenzieFoodImg});
+width: 310px;
+height: 250px;
+justify-content: flex-start;
+
+`; 

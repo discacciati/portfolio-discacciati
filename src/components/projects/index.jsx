@@ -11,7 +11,8 @@ import {
   CardTitle,
   CardText,
   Hamburgueria,
-  DivImgs,
+  ClickFinder,
+  KenzieFood,
 } from "./styles";
 import { BsGithub } from "react-icons/bs";
 
@@ -25,24 +26,55 @@ const Projects = () => {
         <Div>
           <Card>
             <ButtonA
-              href="https://react-entrega-s1-hamburgueria-da-kenzie-discacciati.vercel.app/ "
+              href="https://capstone-m3-grupo-5-vilson.vercel.app/"
               target="_blank"
             >
-              <Hamburgueria></Hamburgueria>
+             <ClickFinder/>
             </ButtonA>
             <CardText>
               {" "}
-              Projeto de e-commerce com funcionalidades de busca por produtos e
-              carrinho de compras
+              Projeto de uma aplicação com funcionalidades de cadastro, login, portfolio e mais.
             </CardText>
             <ButtonA
-              href="https://react-entrega-s1-hamburgueria-da-kenzie-discacciati.vercel.app/ "
+              href="https://capstone-m3-grupo-5-vilson.vercel.app/"
               target="_blank"
             >
               <CardTitle> LINK PARA O PROJETO | </CardTitle>
             </ButtonA>
             <ButtonA
-              href="https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-s1-hamburgueria-da-kenzie-discacciati"
+              href="https://github.com/pifaria/capstone-m3-grupo-5-vilson/tree/developer"
+              target="_blank"
+            >
+              <CardTitle>
+                {" "}
+                REPOSITÓRIO{" "}
+                <DivLink>
+                  {" "}
+                  <BsGithub />{" "}
+                </DivLink>{" "}
+              </CardTitle>{" "}
+            </ButtonA>
+          </Card>
+
+          <Card>
+            <ButtonA
+              href="https://api-kenziefood-m2-discacciati.vercel.app/"
+              target="_blank"
+            >
+             <KenzieFood/>
+            </ButtonA>
+            <CardText>
+              {" "}
+              Projeto de e-commerce com funcionalidades de carrinho de compras, busca de produtos e mais.
+            </CardText>
+            <ButtonA
+              href="https://api-kenziefood-m2-discacciati.vercel.app/"
+              target="_blank"
+            >
+              <CardTitle> LINK PARA O PROJETO | </CardTitle>
+            </ButtonA>
+            <ButtonA
+              href="https://github.com/discacciati/api-kenziefood-m2-discacciati"
               target="_blank"
             >
               <CardTitle>
