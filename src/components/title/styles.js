@@ -85,13 +85,14 @@ height: 340px;
 export const Div1 = styled.div`
   display: flex;
   width: 80vw;
-  height: 200px;
+  height: 100px;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding: 0;
   @media (min-width: 430px){
     width: 55vw;
+    height: 200px;
   }
   @media (min-width: 1400px){
     width: 45vw;
@@ -102,11 +103,11 @@ export const Div1 = styled.div`
 
 export const NameTitle = styled.h1`
 display: flex;
-width: 45vw;
+width: 80vw;
 flex-direction: row;
 justify-content: flex-start;
 align-items: center;
-padding: 0;
+padding: 0 15px;
 font-family: 'Titillium Web', sans-serif;
 color: var(--lilac);
 font-weight: 400;
@@ -114,8 +115,10 @@ font-size: 24px;
 line-height: 85px;
 text-align: left;
 
-@media (min-width: 456px){
+@media (min-width: 430px){
+  width: 45vw;
   font-size: 36px;
+  padding: 0;
   }
 
 
@@ -127,20 +130,27 @@ text-align: left;
 
 export const Text = styled.h3`
   display: flex;
-  width: 45vw;
+  width: 85vw;
   height: 200px;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding: 0;
+  padding: 0 15px;
   font-family: 'Titillium Web', sans-serif;
   color: var(--lilac);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 30px;
   text-align: left; 
   letter-spacing: 0.15em;
   flex-wrap: wrap;
+
+
+  @media (min-width: 430px){
+  width: 45vw;
+  font-size: 36px;
+  padding: 0;
+  }
 
   @media (min-width: 769px){
   font-size: 20px;
@@ -165,12 +175,18 @@ padding: 30px 0;
 
 export const Div4 = styled.div`
 display: flex;
-width: 70vw;
+width: 100vw;
 background-color: var(--black);
 justify-content: flex-start;
-padding: 0 20px;
+padding: 0 10px;
 
 @media (min-width: 769px){
+  padding: 0 20px;
+  width: 50vw;
+  }
+
+@media (min-width: 769px){
+
   width: 50vw;
   }
 

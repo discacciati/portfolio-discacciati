@@ -72,7 +72,7 @@ export const Text = styled.h5`
   font-family: 'Titillium Web', sans-serif;
   color: var(--white);
   font-weight: 400;
-  font-size: 1em;
+  font-size: 0.8em;
   line-height: 30px;
   text-align: left; 
   letter-spacing: 0.1em;
