@@ -13,9 +13,14 @@ import {
   ClickFinder,
   KenzieFood,
   KenzieHub,
-  FormCadastro
+  FormCadastro, Image,
 } from "./styles";
 import { BsGithub } from "react-icons/bs";
+import HamburgueriaImg from '../../assets/hamburgueria.svg';
+import ClickImg from '../../assets/clickfinder.svg';
+import KenzieFoodImg from '../../assets/kenzieFood.svg';
+import KenzieHubImg from '../../assets/kenzieHub.svg';
+import FormCadastroImg from '../../assets/formCadastro.svg';
 
 const Projects = () => {
   return (
@@ -30,7 +35,7 @@ const Projects = () => {
               href="https://capstone-m3-grupo-5-vilson.vercel.app/"
               target="_blank"
             >
-              <ClickFinder />
+              <ClickFinder><Image src={ClickImg} alt=""/></ClickFinder>
             </ButtonA>
             <CardText>
               {" "}
@@ -61,7 +66,7 @@ const Projects = () => {
               href="https://api-kenziefood-m2-discacciati.vercel.app/"
               target="_blank"
             >
-              <KenzieFood />
+              <KenzieFood><Image src={KenzieFoodImg} alt=""/></KenzieFood>
             </ButtonA>
             <CardText>
               {" "}
@@ -94,7 +99,7 @@ const Projects = () => {
               href="https://react-entrega-s1-hamburgueria-da-kenzie-discacciati.vercel.app/ "
               target="_blank"
             >
-              <Hamburgueria></Hamburgueria>
+              <Hamburgueria><Image src={HamburgueriaImg} alt=""/></Hamburgueria>
             </ButtonA>
             <CardText>
               {" "}
@@ -126,7 +131,7 @@ const Projects = () => {
               href="https://react-entrega-s2-kenzie-hub-discacciati-discacciati.vercel.app/ "
               target="_blank"
             >
-              <KenzieHub></KenzieHub>
+              <KenzieHub><Image src={KenzieHubImg} alt=""/></KenzieHub>
             </ButtonA>
             <CardText>
               {" "}
@@ -157,7 +162,7 @@ const Projects = () => {
               href="https://react-entrega-s2-formulario-de-cadastro-discacciati-discacciati.vercel.app/"
               target="_blank"
             >
-              <FormCadastro></FormCadastro>
+              <FormCadastro><Image src={FormCadastroImg} alt=""/></FormCadastro>
             </ButtonA>
             <CardText>
               {" "}

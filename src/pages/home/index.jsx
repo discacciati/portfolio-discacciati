@@ -13,12 +13,15 @@ const Home = () => {
 
     const [about,setAbout]=useState(false);
 
+    const winSize = window.screen.width
+    console.log(winSize)
+
     return (
         <Container>
-            <Header setAbout={setAbout} />
+            {window.screen.width > 430 ? <Header setAbout={setAbout} /> : null} 
             <Title/>
             <Contact/>
-            {about? <AboutMe /> : null}
+            {window.screen.width > 430 ?  about ? <AboutMe /> : null : <AboutMe />} 
             <Technologies />
             <Projects /> 
             <Footer/> 

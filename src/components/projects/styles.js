@@ -1,10 +1,7 @@
 import styled from "styled-components";
-import HamburgueriaImg from '../../assets/hamburgueria.svg';
-import ClickImg from '../../assets/clickfinder.svg';
-import KenzieFoodImg from '../../assets/kenzieFood.svg';
-import KenzieHubImg from '../../assets/kenzieHub.svg';
-import FormCadastroImg from '../../assets/formCadastro.svg';
+
 import { css } from "styled-components";
+import { style } from "@mui/system";
 
 const BebasFont = css`
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
@@ -183,10 +180,10 @@ export const ButtonA = styled.a`
 
 export const Hamburgueria = styled.div`
 display: flex;
-background-image: url(${HamburgueriaImg});
-width: 310px;
-height: 250px;
+width: 295px;
 justify-content: flex-start;
+margin-top: 15px;
+border-radius: 5px;
 
 @media (min-width: 1020px){
       width: 350px;
@@ -196,10 +193,10 @@ justify-content: flex-start;
 
 export const ClickFinder = styled.div`
 display: flex;
-background-image: url(${ClickImg});
-width: 310px;
-height: 250px;
+width: 295px;
 justify-content: flex-start;
+margin-top: 15px;
+border-radius: 5px;
 
 @media (min-width: 1020px){
       width: 350px;
@@ -209,10 +206,10 @@ justify-content: flex-start;
 
 export const KenzieFood = styled.div`
 display: flex;
-background-image: url(${KenzieFoodImg});
-width: 310px;
-height: 250px;
+width: 295px;
 justify-content: flex-start;
+margin-top: 15px;
+border-radius: 5px;
 
 @media (min-width: 1020px){
       width: 350px;
@@ -222,10 +219,10 @@ justify-content: flex-start;
 
 export const KenzieHub = styled.div`
 display: flex;
-background-image: url(${KenzieHubImg});
-width: 310px;
-height: 250px;
+width: 295px;
+margin-top: 15px;
 justify-content: flex-start;
+border-radius: 5px;
 
 @media (min-width: 1020px){
       width: 350px;
@@ -235,13 +232,22 @@ justify-content: flex-start;
 
 export const FormCadastro = styled.div`
 display: flex;
-background-image: url(${FormCadastroImg});
-width: 310px;
-height: 250px;
+width: 295px;
 justify-content: flex-start;
+margin-top: 15px;
+border-radius: 5px;
 
 @media (min-width: 1020px){
       width: 350px;
     }
 
 `; 
+
+export const Image = styled.img`
+width: 295px;
+@media (min-width: 1020px){
+      width: 350px;
+    }
+
+
+`;
