@@ -42,15 +42,19 @@ export const DivFoto = styled.div`
   align-items: center;
   padding: 0;
 
-  @media (min-width: 769px){
-    width: 30vw;
+  @media (min-width: 430px){
+    width: 35vw;
   }
+  @media (min-width: 1400px){
+    width: 35vw;
+  }
+
 
 `;
 
 export const Div2 = styled.div`
 display: flex;
-width: 50vw;
+width: 30vw;
 flex-direction: column;
 justify-content: space-around;
 align-items: center;
@@ -80,12 +84,19 @@ height: 340px;
 
 export const Div1 = styled.div`
   display: flex;
-  width: 50vw;
+  width: 80vw;
   height: 200px;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding: 0;
+  @media (min-width: 430px){
+    width: 55vw;
+  }
+  @media (min-width: 1400px){
+    width: 45vw;
+  }
+
 
  `;
 

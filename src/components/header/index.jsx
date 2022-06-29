@@ -42,7 +42,7 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
   
   const ImageMarked = styled('span')(({ theme }) => ({
     height: 2,
-    width: 15,
+    width: 10,
     backgroundColor: '#947EB0',
     position: 'absolute',
     bottom: -2,
@@ -50,7 +50,7 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
     transition: theme.transitions.create('opacity'),
   }));
 
-const Header = ({setAbout, setTech, setProject}) => {
+const Header = ({setAbout}) => {
 
     const history = useHistory();
       
@@ -60,11 +60,9 @@ const Header = ({setAbout, setTech, setProject}) => {
             history.push('/#about')
         }
         if(event === "setTech"){ 
-            setTech(true)
             history.push('/#technologies')
         }
         if(event === "setProject"){ 
-            setProject(true)
             history.push('/#projects')
             
         }
@@ -75,93 +73,93 @@ const Header = ({setAbout, setTech, setProject}) => {
     return(
         <Container>
             <Box>
-            <Div></Div>
-            <ButtonA href="#about">
-                <ImageButton
-                    onClick={()=>handleClick("setAbout")}
-                    focusRipple
-                    key={"AboutMe"}
-                    style={{
-                        width: "150px",
-                        height: "200px",
-                    }}
-                >
-                    <Image>
-                        <Typography
-                        component="span"
-                        variant="subtitle1"
-                        color="inherit"
-                        sx={{
-                            position: 'relative',
-                            p: 3,
-                            pt: 1,
-                            pb: (theme) => `calc(${theme.spacing(1)} + 15px)`,
-                            fontFamily: '',
+                <Div></Div>
+                <ButtonA href="#about">
+                    <ImageButton
+                        onClick={()=>handleClick("setAbout")}
+                        focusRipple
+                        key={"AboutMe"}
+                        style={{
+                            width: "150px",
+                            height: "200px",
                         }}
-                        >
-                            ABOUT ME
-                            <ImageMarked className="MuiImageMarked-root" />
-                        </Typography>
-                    </Image>
-                </ImageButton>             
+                    >
+                        <Image>
+                            <Typography
+                            component="span"
+                            variant="subtitle1"
+                            color="inherit"
+                            sx={{
+                                position: 'relative',
+                                p: 3,
+                                pt: 1,
+                                pb: (theme) => `calc(${theme.spacing(1)} + 15px)`,
+                                fontFamily: '',
+                            }}
+                            >
+                                ABOUT ME
+                                <ImageMarked className="MuiImageMarked-root" />
+                            </Typography>
+                        </Image>
+                    </ImageButton>             
                 </ButtonA>  
                 <ButtonA href="#technologies">     
-                <ImageButton
-                     onClick={()=>handleClick("setTech")}                    
-                    focusRipple
-                    key={"Technologies"}
-                    style={{
-                        width: "160px",
-                        height: "200px",
-                    }}
-                >
-                    <Image>
-                        <Typography
-                        component="span"
-                        variant="subtitle1"
-                        color="inherit"
-                        sx={{
-                            position: 'relative',
-                            p: 3,
-                            pt: 1,
-                            pb: (theme) => `calc(${theme.spacing(1)} + 15px)`,
-                            fontFamily: '',
+                    <ImageButton
+                        onClick={()=>handleClick("setTech")}                    
+                        focusRipple
+                        key={"Technologies"}
+                        style={{
+                            width: "160px",
+                            height: "200px",
                         }}
-                        >
-                            TECHNOLOGIES
-                            <ImageMarked className="MuiImageMarked-root" />
-                        </Typography>
-                    </Image>
-                </ImageButton>  
+                    >
+                        <Image>
+                            <Typography
+                            component="span"
+                            variant="subtitle1"
+                            color="inherit"
+                            sx={{
+                                position: 'relative',
+                                p: 3,
+                                pt: 1,
+                                pb: (theme) => `calc(${theme.spacing(1)} + 15px)`,
+                                fontFamily: '',
+                            }}
+                            >
+                                TECHNOLOGIES
+                                <ImageMarked className="MuiImageMarked-root" />
+                            </Typography>
+                        </Image>
+                    </ImageButton>  
                 </ButtonA>
                 <ButtonA href="#projects">
-                <ImageButton
-                     onClick={()=>handleClick("setProject")}
-                    focusRipple
-                    key={"Projects"}
-                    style={{
-                        width: "150px",
-                        height: "200px",
-                    }}
-                >
-                    <Image>
-                        <Typography
-                        component="span"
-                        variant="subtitle1"
-                        color="inherit"
-                        sx={{
-                            position: 'relative',
-                            p: 3,
-                            pt: 1,
-                            pb: (theme) => `calc(${theme.spacing(1)} + 15px)`,
-                            fontFamily: '',
+                    <ImageButton
+                        onClick={()=>handleClick("setProject")}
+                        focusRipple
+                        key={"Projects"}
+                        style={{
+                            width: "150px",
+                            height: "200px",
                         }}
-                        >
-                            PROJECTS
-                            <ImageMarked className="MuiImageMarked-root" />
-                        </Typography>
-                    </Image>
-                </ImageButton>  
+                    >
+                        <Image>
+                            <Typography
+                            component="span"
+                            variant="subtitle1"
+                            color="inherit"
+                            sx={{
+                                position: 'relative',
+                                p: 3,
+                                pt: 1,
+                                pb: (theme) => `calc(${theme.spacing(1)} + 15px)`,
+                                fontFamily: '',
+                            }}
+                            >
+                                PROJECTS
+                                <ImageMarked className="MuiImageMarked-root" />
+                            </Typography>
+                        </Image>
+                    </ImageButton>  
                 </ButtonA>
             </Box>      
         </Container>

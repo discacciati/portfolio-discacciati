@@ -16,15 +16,6 @@ function App() {
     <>
     <CssBaseline />
     <GlobalStyle/>
-    <ToastContainer    //<------- coloca as configs do tostify aqui na app
-              position="top-right"
-              autoClose={1500}
-              hideProgressBar={false}
-              newestOnTop={false}
-              closeOnClick
-              rtl={false}
-              draggable
-    />
     <ThemeProvider theme={DarkTheme}> 
       <Routes />
     </ThemeProvider>

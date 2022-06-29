@@ -22,7 +22,7 @@ export const Box = styled.div`
   padding: 50px 0;
 
   @media (min-width: 430px){
-    width: 75vw;
+    width: 85vw;
   }
 `;
 
@@ -37,17 +37,18 @@ export const Line = styled.div`
   margin-bottom: 20px;
   
   @media (min-width: 430px){
-    width: 75vw;
+    width: 85vw;
   }
 `;
 
 export const Rodape = styled.div`
  display: flex;
  flex-direction: column;
- width: 70vw;
+ width: 85vw;
  align-items: center;
  justify-content: center;
  padding: 10px;
+
 `;
 
 
@@ -60,8 +61,8 @@ export const Text = styled.h5`
   font-family: 'Titillium Web', sans-serif;
   color: var(--pastellilac);
   font-weight: 400;
-  font-size: 1em;
-  line-height: 30px;
+  font-size: 0.5em;
+  line-height: 15px;
   text-align: center; 
   letter-spacing: 0.1em;
   flex-wrap: wrap;
@@ -69,7 +70,7 @@ export const Text = styled.h5`
   margin-bottom: 8px;
 
   @media (min-width: 769px){
-  font-size: 16px;
+  font-size: 0.7em;
   }
 
  `;

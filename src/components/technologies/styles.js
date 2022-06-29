@@ -23,7 +23,7 @@ export const Box = styled.div`
   padding: 50px 0;
 
   @media (min-width: 430px){
-    width: 75vw;
+    width: 85vw;
   }
 `;
 
@@ -36,7 +36,7 @@ export const Line = styled.div`
   border-radius: 10px;
   
   @media (min-width: 430px){
-    width: 75vw;
+    width: 85vw;
   }
 `;
 
@@ -100,13 +100,18 @@ export const Card = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 320px;
-    height: 350px;
+    width: 300px;
+    height: 320px;
 
     background: #ECF9F7;
     border-radius: 35px;
     border-bottom: 15px solid #A9D2D5;
     margin-bottom: 20px;
+
+    @media (min-width: 730px){
+      width: 320px;
+      height: 350px;
+  }
     
 `;
 
@@ -116,7 +121,7 @@ export const CardTitle = styled.div`
     font-family: ${BebasFont};
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.15em;
     color: #947EB0;
@@ -128,7 +133,7 @@ export const CardText = styled.h5`
     font-family: 'Titillium Web', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 18px;
     line-height: 38px;
     letter-spacing: 0.15em;
     color: #4B6062;

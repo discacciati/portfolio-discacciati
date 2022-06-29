@@ -13,20 +13,30 @@ export const Box = styled.div`
   display: flex;
   width: 95vw;
   height: 200px;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: space-between;
   padding: 0;
 
   @media (min-width: 430px){
     flex-direction: row;
-    height: 200px;
-    
-  
+    height: 200px;  
   }
 
-  @media (min-width: 769px){
+  @media (min-width: 760px){
+    width: 90vw;
+  }
+
+  @media (min-width: 1020px){
+    width: 80vw;
+  }
+
+  @media (min-width: 1400px){
     width: 75vw;
+  }
+
+  @media (min-width: 1400px){
+    width: 60vw;
   }
 
  `;

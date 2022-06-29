@@ -12,18 +12,16 @@ import { useState } from "react";
 const Home = () => {
 
     const [about,setAbout]=useState(false);
-    const [tech,setTech]=useState(false);
-    const [project,setProject]=useState(false);
 
     return (
         <Container>
-            <Header setAbout={setAbout} setTech={setTech} setProject={setProject}/>
+            <Header setAbout={setAbout} />
             <Title/>
             <Contact/>
             {about? <AboutMe /> : null}
-            {tech? <Technologies /> : null}
-            {project? <Projects /> : null}
-            <Footer/>
+            <Technologies />
+            <Projects /> 
+            <Footer/> 
         </Container>
 
     );

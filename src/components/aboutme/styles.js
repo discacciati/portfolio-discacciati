@@ -23,7 +23,7 @@ export const Box = styled.div`
   padding: 50px 0;
 
   @media (min-width: 430px){
-    width: 75vw;
+    width: 85vw;
   }
 `;
 
@@ -36,7 +36,7 @@ export const Line = styled.div`
   border-radius: 10px;
 
   @media (min-width: 430px){
-    width: 75vw;
+    width: 85vw;
   }
 `;
 
@@ -70,7 +70,7 @@ export const Text = styled.h5`
   align-items: center;
   padding: 0;
   font-family: 'Titillium Web', sans-serif;
-  color: var(--pastellilac);
+  color: var(--white);
   font-weight: 400;
   font-size: 1em;
   line-height: 30px;
@@ -80,8 +80,9 @@ export const Text = styled.h5`
   margin-top: 5px;
   margin-bottom: 8px;
 
-  @media (min-width: 769px){
-  font-size: 16px;
+  @media (min-width: 760px){
+    font-size: 1em;
+    width: 85vw;
   }
 
  `;

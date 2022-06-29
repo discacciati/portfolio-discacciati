@@ -27,7 +27,7 @@ export const Box = styled.div`
   padding: 50px 0;
 
   @media (min-width: 430px){
-    width: 75vw;
+    width: 85vw;
   }
 `;
 
@@ -41,7 +41,7 @@ export const Line = styled.div`
 
   
   @media (min-width: 430px){
-    width: 75vw;
+    width: 85vw;
   }
 `;
 
@@ -104,13 +104,23 @@ export const Card = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 320px;
+    width: 300px;
     height: 450px;
 
     background: #ECF9F7;
     border-radius: 35px;
     border-bottom: 15px solid #A9D2D5;
     margin-bottom: 20px;
+
+    @media (min-width: 760px){
+      width: 320px;
+      height: 450px;
+    }
+
+    @media (min-width: 1020px){
+      width: 360px;
+      height: 450px;
+    }
     
 `;
 
@@ -178,6 +188,10 @@ width: 310px;
 height: 250px;
 justify-content: flex-start;
 
+@media (min-width: 1020px){
+      width: 350px;
+    }
+
 `; 
 
 export const ClickFinder = styled.div`
@@ -186,6 +200,10 @@ background-image: url(${ClickImg});
 width: 310px;
 height: 250px;
 justify-content: flex-start;
+
+@media (min-width: 1020px){
+      width: 350px;
+    }
 
 `; 
 
@@ -196,6 +214,10 @@ width: 310px;
 height: 250px;
 justify-content: flex-start;
 
+@media (min-width: 1020px){
+      width: 350px;
+    }
+
 `; 
 
 export const KenzieHub = styled.div`
@@ -205,6 +227,10 @@ width: 310px;
 height: 250px;
 justify-content: flex-start;
 
+@media (min-width: 1020px){
+      width: 350px;
+    }
+
 `; 
 
 export const FormCadastro = styled.div`
@@ -213,5 +239,9 @@ background-image: url(${FormCadastroImg});
 width: 310px;
 height: 250px;
 justify-content: flex-start;
+
+@media (min-width: 1020px){
+      width: 350px;
+    }
 
 `; 
