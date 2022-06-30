@@ -80,7 +80,7 @@ export const Text = styled.h5`
   margin-top: 5px;
   margin-bottom: 8px;
 
-  @media (min-width: 769px){
+  @media (min-width: 760px){
   font-size: 16px;
   }
 
@@ -100,7 +100,7 @@ export const Card = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 290px;
     height: 320px;
 
     background: #ECF9F7;

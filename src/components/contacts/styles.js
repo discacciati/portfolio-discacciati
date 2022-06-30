@@ -13,12 +13,13 @@ export const Container = styled.div`
 export const Box = styled.div`
   display: flex;
   width: 95vw;
-  height: 300px;
+  height: 290px;
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 30px;
 
   @media (min-width: 430px){
+    height: 280px;
     width: 75vw;
   }
 `;

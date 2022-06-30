@@ -12,10 +12,16 @@ export const Container = styled.div`
 export const Box = styled.div`
   display: flex;
   width: 100vw;
-  height: 400px;
+  height: 500px;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 0;
+
+  @media (min-width: 430px) {
+    height: 350px;
+    justify-content: flex-end;
+  }
+
 `;
 
 export const Div = styled.div`
@@ -34,7 +40,7 @@ export const Div = styled.div`
 export const DivFoto = styled.div`
   display: flex;
   width: 50vw;
-  height: 200px;
+  height: 230px;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
@@ -42,6 +48,7 @@ export const DivFoto = styled.div`
 
   @media (min-width: 430px) {
     width: 35vw;
+    height: 200px;
   }
   @media (min-width: 1400px) {
     width: 30vw;
@@ -96,17 +103,18 @@ export const NameTitle = styled.h1`
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  padding: 0 15px;
+  padding: 0 5px;
   font-family: "Titillium Web", sans-serif;
   color: var(--lilac);
   font-weight: 400;
   font-size: 28px;
-  line-height: 85px;
+  line-height: 35px;
   text-align: left;
 
   @media (min-width: 430px) {
     width: 45vw;
     font-size: 36px;
+    line-height: 85px;
     padding: 0;
   }
 
@@ -127,13 +135,14 @@ export const Text = styled.h3`
   color: var(--lilac);
   font-weight: 400;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 20px;
   text-align: left;
   letter-spacing: 0.15em;
   flex-wrap: wrap;
 
   @media (min-width: 430px) {
     width: 45vw;
+    line-height: 30px;
     font-size: 18px;
     padding: 0;
   }
@@ -150,7 +159,7 @@ export const Text = styled.h3`
 export const Div3 = styled.div`
   display: flex;
   width: 100vw;
-  height: 250px;
+  height: 200px;
   background-color: var(--black);
   flex-direction: row;
   justify-content: center;

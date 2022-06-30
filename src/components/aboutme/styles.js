@@ -73,7 +73,7 @@ export const Text = styled.h5`
   color: var(--white);
   font-weight: 400;
   font-size: 0.8em;
-  line-height: 30px;
+  line-height: 18px;
   text-align: left; 
   letter-spacing: 0.1em;
   flex-wrap: wrap;
