@@ -35,6 +35,7 @@ const Technologies = () => {
             <CardText> PostgreSQL </CardText>
             <CardText> Docker </CardText>
             <CardText> Typescript </CardText>
+            <CardText> Python </CardText>
           </Card>
         </Div>
       </Box>

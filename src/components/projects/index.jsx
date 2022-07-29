@@ -21,6 +21,8 @@ import ClickImg from '../../assets/clickfinder.svg';
 import KenzieFoodImg from '../../assets/kenzieFood.svg';
 import KenzieHubImg from '../../assets/kenzieHub.svg';
 import FormCadastroImg from '../../assets/formCadastro.svg';
+import ApiM4Img from '../../assets/API-M4.png';
+import CRUDImg from '../../assets/CRUD-usuario.png';
 
 const Projects = () => {
   return (
@@ -178,6 +180,54 @@ const Projects = () => {
             >
              
                 REPOSITÓRIO{" "}
+                <DivLink>
+                  {" "}
+                  <BsGithub />{" "}
+                </DivLink>{" "}
+        
+            </ButtonA>
+          </Card>
+
+          <Card>
+            <ButtonA
+              href="https://github.com/almeida-raniery/capstone-grupo-6-felipe"
+              target="_blank"
+            >
+              <FormCadastro><Image src={ApiM4Img} alt=""/></FormCadastro>
+            </ButtonA>
+            <CardText>
+              {" "}
+              Projeto de backend feito em Node.JS, que cria um banco de dados e uma API para leitura, inclusão, atualização e deleção de dados no Banco.
+            </CardText>
+            <ButtonA
+              href="https://github.com/almeida-raniery/capstone-grupo-6-felipe"
+              target="_blank"
+            >
+             
+                REPOSITÓRIO{" "}
+                <DivLink>
+                  {" "}
+                  <BsGithub />{" "}
+                </DivLink>{" "}
+        
+            </ButtonA>
+          </Card>
+
+          <Card>
+            <ButtonA
+              href="https://github.com/Kenzie-Academy-Brasil-Developers/m4-entrega-sprint1-discacciati"
+              target="_blank"
+            >
+              <FormCadastro><Image src={CRUDImg} alt=""/></FormCadastro>
+            </ButtonA>
+            <CardText>
+              {" "}
+              Projeto de backend feito em Node.JS, que desenvolve um CRUD de usuário, com permissão de administrador. Possui uma API REST, e permite criar, listar, atualizar e deletar usuários de um banco de dados.
+            </CardText>
+            <ButtonA
+              href="https://github.com/Kenzie-Academy-Brasil-Developers/m4-entrega-sprint1-discacciati"
+              target="_blank"
+            > REPOSITÓRIO{" "}
                 <DivLink>
                   {" "}
                   <BsGithub />{" "}
