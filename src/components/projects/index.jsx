@@ -197,7 +197,7 @@ const Projects = () => {
             </ButtonA>
             <CardText>
               {" "}
-              Projeto de backend feito em Node.JS, que cria um banco de dados e uma API para leitura, inclusão, atualização e deleção de dados no Banco.
+              Projeto de backend feito em Node.JS, que cria um banco de dados e cria uma API REST para leitura, inclusão, atualização e deleção de dados no Banco.
             </CardText>
             <ButtonA
               href="https://github.com/almeida-raniery/capstone-grupo-6-felipe"
